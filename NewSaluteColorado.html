@@ -35,7 +35,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="index-page d-flex flex-column min-vh-100">
 <a class="skip-link screen-reader-text" href="#content" role="link" title="Skip to content">
 		Skip to content</a>
   <header id="header" class="header fixed-top">
@@ -55,10 +55,11 @@
     </div><!-- End Top Bar -->
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="NewSaluteColorado.html" class="logo align-items-center" rel="home" aria-current="page">
-        <img class="custom-logo" width="400" height="300" src="https://salutecolorado.org/wp-content/uploads/2025/01/New-Banner-Serving-Those-Who-Have-Served-600x338.png" class="custom-logo" alt="Salute Colorado"/></a>
         <a href="https://www.coloradogives.org/organization/SaluteColorado" class="btn btn-danger">Donate</a>
-        <nav id="navmenu" class="navmenu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a href="NewSaluteColorado.html" class="navbar-brand" rel="home" aria-current="page">
+            <img class="custom-logo" width="400" height="300" src="https://salutecolorado.org/wp-content/uploads/2025/01/New-Banner-Serving-Those-Who-Have-Served-600x338.png" class="custom-logo" alt="Salute Colorado"/></a>
           <ul class="nav flex-column flex-lg-row">
             <li class="nav-item"><a href="#hero" class="active">Home</a></li>
             <li class="nav-item dropdown">
@@ -105,12 +106,13 @@
             <li><a href="https://salutecolorado.org/calendar/" class="active">Calendar</a></li>
             <li><a href="https://salutecolorado.org/contact-us/" class="active">Contact Us</a></li>
           </ul>
+          </div>
         </nav>
       </div>
     </div>
   </header>
 
-  <main class="main" id="content">
+  <main class="main flex-fill" id="content">
   
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
@@ -142,9 +144,8 @@
                   <a href="https://salutecolorado.org/wp-content/uploads/2025/06/Are-you-a-transitioning-Veteran-1.png"><img src="https://salutecolorado.org/wp-content/uploads/2025/06/Are-you-a-transitioning-Veteran-1-1024x1024.png" alt="to explore Veteran programs"></a>
                 </figure>
                 <figure>
-                  <a href="https://salutecolorado.org/wp-content/uploads/2025/06/Hire-a-Veteran-DAy.png" alt="July 25th is National Hire a Veteran Day"><img src="<https://salutecolorado.org/wp-content/uploads/2025/06/Hire-a-Veteran-DAy-1024x1024.png"/></a>
+                  <a href="https://salutecolorado.org/wp-content/uploads/2025/06/Hire-a-Veteran-DAy.png" alt="July 25th is National Hire a Veteran Day"><img src="https://salutecolorado.org/wp-content/uploads/2025/06/Hire-a-Veteran-DAy-1024x1024.png"/></a>
                 </figure>
-                </a>
               </div>
             </div>
           </div>
@@ -269,9 +270,8 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative dark-background">
-
-    <div class="container footer-top">
+  <footer class="footer dark-background mt-auto">
+    <div class="container-fluid text-white text-center py-4">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
@@ -286,23 +286,23 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <form id="subscribe" method="Post">
-          <fieldset>
-          <legend>Subscribe to Newsletter</legend>
-            <ul>
-              <li>
-                <label for="mc4wp_name">Name</label>
-                <input type="text" id="mc4wp_name" name="NAME" placeholder="Your Name" required="">
-              </li>
-              <li>
-                <label for="mc4wp_email">E-mail</label>
-                <input type="email" id="mc4wp_email" name="EMAIL" placeholder="Your email address" required="">
-              </li>
-            </ul>
-          </fieldset>
-          <p id="mc4wp_button">
-	        <input type="submit" value="Subscribe">
-          </form>
+          <h3>Subscribe to Newsletter</h3>
+              <p>Fill out name and e-mail</p>
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label id="name" class="required">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <label id="email" class="required">email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  </div>
+                </div>
+                <div class="form-submit">
+                <button type="submit">Subscribe</button>
+                </div>
+              </form>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
@@ -319,29 +319,23 @@
 
     <div class="container copyright text-center mt-4">
         <section id="text-17" class="widget widget_text">			
-        <div class="textwidget"><p>Salute Colorado is a registered 501(c)(3) charity. Our tax identification number is 46-4296645.</p>
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">2025 Salute Colorado</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
+          <div class="textwidget"><p>Salute Colorado is a registered 501(c)(3) charity. Our tax identification number is 46-4296645.</p>
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">2025 Salute Colorado</strong> <span>All Rights Reserved</span></p>
+            <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+            </div>
+          </div>
+        </section>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
