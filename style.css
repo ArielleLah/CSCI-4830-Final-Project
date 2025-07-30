@@ -21,36 +21,23 @@ a:focus-visible {
   transform: scale(1.05);          /* expand by 5% */
 }
 
-/* 1) Controls: solid dark circle + white arrow */
+#testimonialCarousel {
+  position: relative;      /* ensure positioning context */
+  padding: 0 3rem;         /* space for arrows on left+right */
+}
+
 #testimonialCarousel .carousel-control-prev,
 #testimonialCarousel .carousel-control-next {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.85);  /* opaque black for contrast */
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1.5rem 1.5rem;
 }
 
-/* hide default icon */
-#testimonialCarousel .carousel-control-prev-icon,
-#testimonialCarousel .carousel-control-next-icon {
-  display: none;
+#testimonialCarousel .carousel-control-prev {
+  left: 0;   /* sits at left padding edge */
 }
-
-/* inject our own white arrow via mask */
-#testimonialCarousel .carousel-control-prev::before,
-#testimonialCarousel .carousel-control-next::before {
-  content: '';
-  display: inline-block;
-  width: 1.2rem;
-  height: 1.2rem;
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: #fff;
+#testimonialCarousel .carousel-control-next {
+  right: 0;  /* sits at right padding edge */
 }
 
