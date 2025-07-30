@@ -41,3 +41,13 @@ a:focus-visible {
   right: 0;  /* sits at right padding edge */
 }
 
+main a {
+  text-decoration: underline;
+  color: darkgreen;
+}
+
+main a:hover,
+a:focus {
+  border: black;             
+  text-decoration: underline;
+}
