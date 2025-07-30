@@ -46,9 +46,9 @@
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>1904 Pearl St., Boulder, CO 80302</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
-          <a href="https://www.facebook.com/salutecolorado/" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/salute_colorado/p/Bx_SFeCAGJz/" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/salute-colorado/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.facebook.com/salutecolorado/" class="facebook"><i class="bi bi-facebook"></i>Facebook</a>
+          <a href="https://www.instagram.com/salute_colorado/p/Bx_SFeCAGJz/" class="instagram"><i class="bi bi-instagram"></i>Instagram</a>
+          <a href="https://www.linkedin.com/company/salute-colorado/" class="linkedin"><i class="bi bi-linkedin"></i>LinkedIn</a>
         </div>
       </div>
     </div><!-- End Top Bar -->
@@ -136,11 +136,11 @@
   <main class="main">
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <h1>Salute Colorado</h1>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content">
+              <h1>Salute Colorado</h1>
               <span class="hero-badge">We empower military leaders to emerge as business and community leadersS</span>
               <a href="https://salutecolorado.org/wp-content/uploads/2025/06/Announcing-the-Winner-of-our-First-Military-Branch-Challenge.png"><img decoding="async" width="940" height="788" src="https://salutecolorado.org/wp-content/uploads/2025/06/Announcing-the-Winner-of-our-First-Military-Branch-Challenge.png" alt="Announcing the Winner of our First Military Branch Challenge"/></a>
               <div class="hero-actions">
@@ -159,7 +159,7 @@
                   <a href="https://salutecolorado.org/wp-content/uploads/2025/06/Are-you-a-transitioning-Veteran-1.png"><img src="https://salutecolorado.org/wp-content/uploads/2025/06/Are-you-a-transitioning-Veteran-1-1024x1024.png" alt="to explore Veteran programs"></a>
                 </figure>
                 <figure>
-                  <a href="https://salutecolorado.org/wp-content/uploads/2025/06/Hire-a-Veteran-DAy.png" alt="July 25th is National Hire a Veteran Day"><img src="https://salutecolorado.org/wp-content/uploads/2025/06/Hire-a-Veteran-DAy-1024x1024.png"/></a>
+                  <a href="https://salutecolorado.org/wp-content/uploads/2025/06/Hire-a-Veteran-DAy.png"><img src="https://salutecolorado.org/wp-content/uploads/2025/06/Hire-a-Veteran-DAy-1024x1024.png" alt="July 25th is National Hire a Veteran Day"/></a>
                 </figure>
               </div>
             </div>
@@ -265,18 +265,19 @@
         <div class="row gy-4 mt-3 justify-content-center">
           <div class="col-md-6">
             <div class="ratio ratio-16x9">
-            <iframe 
-                src="https://www.youtube.com/embed/nzfXT9uflJc"
-                title="Air Force Veteran Forrest Lassiter Valor Bridge Graduate"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
+            <iframe
+              width="560" height="315"
+              src="https://www.youtube.com/embed/nzfXT9uflJc?cc_load_policy=1&cc_lang_pref=en&rel=0"
+              title="Air Force Veteran Forrest Lassiter Valor Bridge Graduate"
+              allow="accelerometer; autoplay; encrypted-media; picture-in-picture; clipboard-write; gyroscope; web-share"
+              allowfullscreen>
             </iframe>
             </div>
           </div>
           <div class="col-md-6">
             <div class="ratio ratio-16x9">
             <iframe 
-                src="https://www.youtube.com/embed/3xDfex2cfi0"
+                src="https://www.youtube.com/embed/3xDfex2cfi0?cc_load_policy=1&cc_lang_pref=en&rel=0"
                 title="Army Veteran Brian W speaks about the holistic nature of Salute Colorado programs"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
@@ -479,24 +480,38 @@
             </button>
 
             </div>
-        </div>
+          </div>
         </section>
   </main>
+
+
   <footer class="footer dark-background mt-auto">
     <div class="container-fluid text-white text-center py-4">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Salute Colorado</span>
-          </a>
-          <div class="social-links d-flex mt-4">
-            <a href="https://www.facebook.com/salutecolorado/"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/salute_colorado/p/Bx_SFeCAGJz/"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/salute-colorado/"><i class="bi bi-linkedin"></i></a>
+          <a href="index.html" class="logo d-flex align-items-center"><span class="sitename">Salute Colorado</span></a>
+          <div class="social-links d-flex flex-column gap-2 mt-4 ps-3">
+              <div class="social-links d-flex flex-column gap-2 mt-4">
+                <a href="https://www.facebook.com/salutecolorado/"
+                  class="d-flex align-items-center text-white text-decoration-none">
+                  <i class="bi bi-facebook"></i>
+                  <span class="ms-2">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/salute_colorado/"
+                  class="d-flex align-items-center text-white text-decoration-none">
+                  <i class="bi bi-instagram"></i>
+                  <span class="ms-2">Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/company/salute-colorado/"
+                  class="d-flex align-items-center text-white text-decoration-none">
+                  <i class="bi bi-linkedin"></i>
+                  <span class="ms-2">LinkedIn</span>
+                </a>
+              </div>
           </div>
         </div>
 
-        <div class="mt-5 footer-contact text-center text-md-start">
+        <div class="mt-5 col-lg-5 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>1904 Pearl St.</p><br>Boulder, CO 80302</br><p>United States</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+1 720-437-9583</span></p>
@@ -506,22 +521,24 @@
 
       <div class="row gy-4 mt-5 justify-content-center">
         <div class="col-lg-4 col-md-8">
-          <h3>Subscribe to Newsletter</h3>
-              <p>Fill out name and e-mail</p>
               <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <label id="name" class="required">Name</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                <fieldset>
+                  <legend>Subscribe to Newsletter</legend>
+                  <p>Fill out name and e-mail</p>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <label id="name" class="required">Name</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                      </div>
+                      <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <label id="email" class="required">email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                      </div>
+                    </div>
+                    </fieldset>
+                  <div class="form-submit">
+                    <button type="submit">Subscribe</button>
                   </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <label id="email" class="required">email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-                  </div>
-                </div>
-                <div class="form-submit">
-                <button type="submit">Subscribe</button>
-                </div>
               </form>
         </div>
       </div>
@@ -546,7 +563,7 @@
 
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i> </a>
 
   <!-- Preloader -->
   <div id="preloader">
