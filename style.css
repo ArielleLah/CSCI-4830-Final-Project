@@ -1,0 +1,22 @@
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px dashed red !important;
+  outline-offset: 5px;
+}
+.button-expand {
+  background-color: #c40023;       /* original red */
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-expand:hover {
+  background-color: #990000;       /* darker red on hover */
+  transform: scale(1.05);          /* expand by 5% */
+}
