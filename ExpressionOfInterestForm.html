@@ -37,7 +37,7 @@
 </head>
 
 <body class="index-page">
-<a class="skip-link screen-reader-text" href="#hero" role="link">Skip to content</a> 
+<a class="skip-link screen-reader-text" href="#formstart" role="link">Skip to content</a> 
   <header id="header" class="header fixed-top">
     <div class="topbar d-flex align-items-center dark-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
@@ -78,9 +78,6 @@
                 class="btn btn-danger">Donate</a>
             </div>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-wrap">
-          <li class="nav-item"><a class="nav-link" href="#about">New Staff Member</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">testimonials</a></li>
-          <!-- … other single links … -->
           <li class="nav-item dropdown">
             <button class="nav-link dropdown-toggle btn btn-link" type="button" id="aboutDropdown" 
             data-bs-toggle="dropdown" aria-expanded="false">About Salute Colorado </button>
@@ -189,7 +186,7 @@
                 </li>
             </ul>
           </fieldset>
-        <fieldset class="mb-4 p-4">
+        <fieldset class="mb-4 p-4 large-radios">
          <legend class="h5">Military Branch *</legend>
           <div class="oneques"> 
             <div>
@@ -218,7 +215,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="mb-4 p-4">
+        <fieldset class="mb-4 p-4 large-radios">
          <legend class="h5">Preferred Communication Method *</legend>
           <div class="oneques"> 
             <div>
@@ -236,42 +233,41 @@
         </fieldset>
         <fieldset class="mt-4 p-4">
          <legend>How did you hear about us: *</legend>
-          <div class="oneques">
             <div>
-              <input id="Friend" name="hearAbout[]" type="checkbox" value="Friend or colleague">
+              <input class="form-check-input" id="Friend" name="hearAbout[]" type="checkbox" value="Friend or colleague">
               <label for="Friend">Friend or colleague</label>
             </div>
             <div>
-              <input id="Alumni" name="hearAbout[]" type="checkbox" value="Program Alumni or Current Participant">
+              <input class="form-check-input" id="Alumni" name="hearAbout[]" type="checkbox" value="Program Alumni or Current Participant">
               <label for="Alumni">Program Alumni or Current Participant</label>
             </div>
             <div>
-              <input id="Social" name="hearAbout[]" type="checkbox" value="Social Media">
+              <input class="form-check-input" id="Social" name="hearAbout[]" type="checkbox" value="Social Media">
               <label for="Social">Social Media</label>
             </div>
             <div>
-              <input id="Internet" name="hearAbout[]" type="checkbox" value="Internet search/website">
+              <input class="form-check-input" id="Internet" name="hearAbout[]" type="checkbox" value="Internet search/website">
               <label for="Internet">Internet search/website</label>
             </div>
             <div>
-              <input id="University" name="hearAbout[]" type="checkbox" value="Student Veteran Association or University Contact">
+              <input class="form-check-input" id="University" name="hearAbout[]" type="checkbox" value="Student Veteran Association or University Contact">
               <label for="University">Student Veteran Association or University Contact</label>
             </div>
             <div>
-              <input id="VeteranOrg" name="hearAbout[]" type="checkbox" value="Veteran Service Organization">
+              <input class="form-check-input" id="VeteranOrg" name="hearAbout[]" type="checkbox" value="Veteran Service Organization">
               <label for="VeteranOrg">Veteran Service Organization</label>
             </div>
-            <div>
-              <input id="other" name="hearAbout[]" type="checkbox" value="Veteran Service Organization">
-              <label for="Other">Other: </label><textarea id="referral" name="referral" cols="80" rows="2" maxlength="500"></textarea>
+            <div class="form-check d-flex align-items-center mb-3">
+              <input class="form-check-input" type="checkbox" id="otherCheckbox" name="hearAbout[]" value="Other">
+              <label class="form-check-label ms-2" for="otherCheckbox">Other:</label>
+              <input type="text" class="form-control form-control-sm ms-2" name="otherText" placeholder="Please specify">
             </div>
-          </div>
           <div>
             <label for="referral">If you were referred by an individual or organization, please share who that was here.</label>
             <textarea id="referral" name="referral" cols="80" rows="2" maxlength="500"></textarea>
           </div>
         </fieldset>
-        <fieldset class="mb-4 p-4">
+        <fieldset class="mb-4 p-4 large-radios">
           <legend class="h5">Is there a specific program you are interested in?</legend>
             <div class="oneques"> 
             <div>
@@ -289,7 +285,8 @@
         </fieldset>
         <fieldset class="mb-4 p-4">
           <legend class="h5">Do you have any questions?</legend>
-          <textarea id="questions" name="questions" cols="80" rows="5" maxlength="1500"></textarea>
+          <label for="questions">Input any other questions here</label>
+          <input type="textarea" id="questions" name="questions" cols="80" rows="5" maxlength="1500"></input>
         </fieldset>
         </div>
 
@@ -366,7 +363,7 @@
     <div class="container copyright text-center mt-4">
         <section id="text-17" class="widget widget_text">			
           <div class="textwidget"><p>Salute Colorado is a registered 501(c)(3) charity. Our tax identification number is 46-4296645.</p>
-          <p>© <span>Copyright</span> <strong class="px-1 sitename">2025 Salute Colorado</strong> <span>All Rights Reserved</span></p>
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">2025 Salute Colorado</strong><span>All Rights Reserved</span></p>
             <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->

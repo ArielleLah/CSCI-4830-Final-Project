@@ -51,3 +51,14 @@ a:focus {
   border: black;             
   text-decoration: underline;
 }
+
+/* make all radios & labels inside .large-radios bigger */
+.large-radios input[type="radio"] {
+  transform: scale(2);
+  transform-origin: center center;
+  margin-right: 0.5rem;
+  /* for some browsers you may also need: */
+  display: inline-block;
+}
+
+
