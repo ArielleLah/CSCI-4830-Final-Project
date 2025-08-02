@@ -177,8 +177,8 @@
                   <input id="telno1" name="telno1" type="tel" required aria-required="true" placeholder="123-456-7890" />
                 </li> 
                 <li class="mb-3">
-                  <label for="dateSep" >Date of separation: *</label>
-                  <input id="dateSep" name="dateSep" type="date" required aria-required="true" placeholder="mm/dd/yyyy"/>
+                  <label for="dateSep" >Date of separation: (mm/dd/yyyy) *</label>
+                  <input id="dateSep" name="dateSep" type="date" required aria-required="true"/>
                 </li> 
                 <li class="mb-3">
                   <label for="location1">Location: *</label>
@@ -230,6 +230,7 @@
               <input id="Text" name="Communication" type="radio" value="Text">
               <label for="Text">Text</label>
             </div>
+          </div>
         </fieldset>
         <fieldset class="mt-4 p-4">
          <legend>How did you hear about us: *</legend>
@@ -260,35 +261,36 @@
             <div class="form-check d-flex align-items-center mb-3">
               <input class="form-check-input" type="checkbox" id="otherCheckbox" name="hearAbout[]" value="Other">
               <label class="form-check-label ms-2" for="otherCheckbox">Other:</label>
-              <input type="text" class="form-control form-control-sm ms-2" name="otherText" placeholder="Please specify">
+              <label class="form-check-label ms-2" for="othertext">Please specify</label>
+              <input type="text" id="othertext" class="form-control form-control-sm ms-2" name="otherText">
             </div>
-          <div>
-            <label for="referral">If you were referred by an individual or organization, please share who that was here.</label>
-            <textarea id="referral" name="referral" cols="80" rows="2" maxlength="500"></textarea>
-          </div>
+            <div>
+              <label for="referral">If you were referred by an individual or organization, please share who that was here.</label>
+              <input type="text" id="referral" name="referral" maxlength="500">
+            </div>
         </fieldset>
         <fieldset class="mb-4 p-4 large-radios">
           <legend class="h5">Is there a specific program you are interested in?</legend>
             <div class="oneques"> 
-            <div>
-              <input id="Bridge" name="programs" type="radio" value="Valor Bridge">
-              <label for="Bridge">Valor Bridge - two cohorts per year, one kicks off in late March and the other in late Septemer</label>
-            </div>
-            <div>
-              <input id="Journey" name="programs" type="radio" value="Journey">
-              <label for="Journey">Valor Journey - one cohort per year, kicks off in April</label>
-            </div>
-            <div>
-              <input id="NotSure" name="programs" type="radio" value="Not Sure">
-              <label for="NotSure">Not sure, need more info</label>
+              <div>
+                <input id="Bridge" name="programs" type="radio" value="Valor Bridge">
+                <label for="Bridge">Valor Bridge - two cohorts per year, one kicks off in late March and the other in late Septemer</label>
+              </div>
+              <div>
+                <input id="Journey" name="programs" type="radio" value="Journey">
+                <label for="Journey">Valor Journey - one cohort per year, kicks off in April</label>
+              </div>
+              <div>
+                <input id="NotSure" name="programs" type="radio" value="Not Sure">
+                <label for="NotSure">Not sure, need more info</label>
+              </div>
             </div>
         </fieldset>
         <fieldset class="mb-4 p-4">
           <legend class="h5">Do you have any questions?</legend>
           <label for="questions">Input any other questions here</label>
-          <input type="textarea" id="questions" name="questions" cols="80" rows="5" maxlength="1500"></input>
+          <input type="text" id="questions" name="questions" maxlength="1500">
         </fieldset>
-        </div>
 
             <p>If you would like to receive our newsletter and information on our upcoming events etc.</p>
             <p>Please sign up for our mailing list <a href="http://eepurl.com/iT1tv-/">here:</a></p>
@@ -298,7 +300,7 @@
         </form> 
       </div>
     </div>
-
+   </div>
   </main>
 
   <footer class="footer dark-background mt-auto">
@@ -329,7 +331,7 @@
 
         <div class="mt-5 col-lg-5 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>1904 Pearl St.</p><br>Boulder, CO 80302</br><p>United States</p>
+          <p>1904 Pearl St.</p><br>Boulder, CO 80302<br><p>United States</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+1 720-437-9583</span></p>
           <a href="mailto:info@salutecolorado.org">info@salutecolorado.org</a>
         </div>
